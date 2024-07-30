@@ -66,4 +66,46 @@ let longFruits = fruits.filter(fruit => fruit.length > 5);
 // reduce(): Applies a function against an accumulator and each element to reduce the array to a single value.
 let totalLength = fruits.reduce((sum, fruit) => sum + fruit.length, 0);
 
-*/
+*/ 
+
+/*creating a 2-D array */
+// Creating a 2-D array (matrix)
+//The indices are zero-based, meaning the first row or column has an index of 0.
+const matrix = [
+    [1, 2, 3],    // First row
+    [4, 5, 6],    // Second row
+    [7, 8, 9]     // Third row
+];
+
+//Accessing Elements:
+//Accessing the element in the second row and third column
+console.log(matrix[1][2]); // Output: 6
+
+//Iterating Over a 2-D Array
+//You can use nested loops to iterate over all elements in a 2-D array. The outer loop iterates through the rows, while the inner loop iterates through the columns of each row.
+// Iterating over the 2-D array
+for (let i = 0; i < matrix.length; i++) {        // Loop through rows
+    for (let j = 0; j < matrix[i].length; j++) { // Loop through columns in each row
+        console.log(matrix[i][j]);
+    }
+}
+
+// Modifying Elements
+You can modify elements in a 2-D array using their indices.
+// Changing the element in the first row and second column
+matrix[0][1] = 10;
+console.log(matrix); // Output: [[1, 10, 3], [4, 5, 6], [7, 8, 9]]
+
+/*Practice Question: */  
+// iterating for loop over array 
+const shoppingCart = [
+    { itemName: "js Course", price: 2999 },
+    { itemName: "web dev Course", price: 4999 },
+    { itemName: "UI/UX Course", price: 2999 },
+    { itemName: "PYTHON Course", price: 8999 },
+];
+
+// Using "for" loop to iterate over the array
+for (let i = 0; i < shoppingCart.length; i++) {
+    console.log(shoppingCart[i]);
+}

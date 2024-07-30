@@ -64,7 +64,7 @@ const myNums=[1,2,3]
 
 //reduce () using arrow function
 const total= myNums.reduce((acc,currval)=> acc+currval, 0);
-console.log(total)
+// console.log(total)
 
 //
 const shoppingCart=[
@@ -86,4 +86,6 @@ const shoppingCart=[
     },
 ]
 const priceToPay=shoppingCart.reduce((acc,item)=>(acc + item.price),0)
+// what if omit intial value: first element is used as intital value 
+//here, since the acc is not a number, this leads to error
 console.log(priceToPay)
