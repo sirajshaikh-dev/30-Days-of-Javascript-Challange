@@ -78,3 +78,4 @@ console.log(car);
     [key]:value
  }
  console.log(obj)
+  sfs
