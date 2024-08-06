@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 # Day 9: DOM Manipulation in Javascript
+=======
+ https://github.com/BCAPATHSHALA/30-DAYS-OF-JAVASCRIPT-CHALLENGE/blob/main/9%23README.MD
+
+ # Day 9: DOM Manipulation in Javascript
+>>>>>>> Stashed changes
 
 Welcome to Day 9 of JavaScript Basics! Today, we'll dive into DOM Manipulation. We'll explore how to select and manipulate elements, create and append new elements, remove existing ones, modify attributes and classes, and handle events. This session will help you understand the core techniques to interact with and modify the web page dynamically using JavaScript.
 
