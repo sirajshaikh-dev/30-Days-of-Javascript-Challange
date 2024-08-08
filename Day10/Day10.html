@@ -4,23 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day10: Event Handling</title>
-    <link rel="stylesheet" href="Day10.css">
-</head>
-<body >
-    <h4>Task1</h4>
+    <style >
+        h4{ background-color: rgb(57, 92, 92);
+            
+        }
+    </style>
+ </head>
+<body style="background-color: black; color: white;">
+<h4>Task1: add a click event listener to a button that changes the text content of a paragraph
+    </h4>
     <button id="btn1">Button</button>
     <p id="para1">Press Button to change text </p>
-    <h4>Task2</h4>
-    <img id="task2" src="image1.jpg" alt="not found" height="100px">
-    <h4>TASK3 & 4</h4>
+<h4>Task2:Add a double click event listener to an image that toggles its visibility </h4>
+    <img id="task2" src="image1.jpg" alt="not found" height="100px" style="display: block;">
+<h4>Task3: Add a mouseover event listener to an element that changes its background color</h4>
+<h4>Task4: Add a mouseout event listener to an element that reset its bgcolor</h4>
     <p id="mouseEvent">mouseover & mouseout to change bgcolor</p>
-    <h4>Task5</h4>
+<h4>Task5: Add a keydown event listener to an input field that logs the key pressed to the console.</h4>
     <label for="taks5">Type something</label>
     <input type="text" id="task5"> 
-    <h4>Task6</h4>
+<h4>Task6: Add a keyup event listener to an input field that displays the current value in paragraph</h4>
     <label for="task6">Type something</label>
     <input type="text" id="task6"> 
-    <p id="display">Curr Value: </p> 
+    <p id="display"> You typed: </p> 
+<h4>Task7: Add a submit event listener to a form that prevents the defauld submission and logs the form data to the console.</h4>
+    <form action="/url" id="form">
+      <input placeholder="Type">
+      <button type="submit" id="submit">Submit</button>  
+    </form>
+<h4>Task8: Add a change event listener a select dropdown that displays the selected value in paragraph.</h4>
+    <label for="lang">Choose a language</label>
+        <select id="lang">  
+            <option value="javascript">javascript</option>
+            <option value="python">python</option>
+            <option value="swift">swift</option>
+            <option value="django">django</option>
+        </select>
+        <p id="displayPara">selected  </p>
+<h4>Task9:Add a click event listener to a list that logs the text content of the clicked list item using event delegation.</h4>
+    <ul id="task9">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul>
+<h4>Task10: Add an event listener to a parent element that listens for events from dynamically added child elements.</h4>
+    <button id="addItem">Add ITem</button>
+    <ul id="parentList"> </ul>
 </body>
 <script src="Day10.js"></script>
 </html>
