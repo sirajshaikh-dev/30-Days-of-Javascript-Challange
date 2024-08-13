@@ -186,21 +186,10 @@ result.then(res=>{
     console.log(`Result of p3: ${res[2]}`);
 });
 // Task 9: Use Promise.race to log the value of the first promise that resolves among multiple promises.
-const promise1 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Promise 1 resolved"), 500);
-});
 
-const promise2 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Promise 2 resolved"), 300);
-});
-
-const promise3 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Promise 3 resolved"), 1000);
-});
-
-Promise.race([promise1, promise2, promise3])
+Promise.race([p1, p2, p3])
   .then(value => {
-    console.log(value); // Logs "Promise 2 resolved" because it resolves the fastest
+    console.log(value); // Logs "Promise 1 resolved" because it resolves the fastest
   })
   .catch(error => {
     console.error(error);
