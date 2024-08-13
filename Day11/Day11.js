@@ -190,7 +190,6 @@ result.then(res=>{
 Promise.race([p1, p2, p3])
   .then(value => {
     console.log(value); // Logs "Promise 1 resolved" because it resolves the fastest
-  })
-  .catch(error => {
+  }).catch(error => {
     console.error(error);
   });
