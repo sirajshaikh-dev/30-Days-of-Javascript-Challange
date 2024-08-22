@@ -1,15 +1,3 @@
-# Day 13: JavaScript Module Activities
-
-Welcome to JavaScript Module Activities! In these activities, we will explore creating, exporting, and importing modules in JavaScript. We'll also cover using third-party modules, named and default exports, and importing entire modules. By the end of these activities, you'll have a strong understanding of how to work with modules in JavaScript.
-
-## Table of Contents
-
-1. [Activity 1: Creating and Exporting Modules](#activity-1-creating-and-exporting-modules)
-2. [Activity 2: Named and Default Exports](#activity-2-named-and-default-exports)
-3. [Activity 3: Importing Entire Modules](#activity-3-importing-entire-modules)
-4. [Activity 4: Using Third-Party Modules](#activity-4-using-third-party-modules)
-5. [Feature Request](#feature-request)
-6. [Achievements](#achievements)
 
 ## Activity 1: Creating and Exporting Modules
 
@@ -34,4 +22,28 @@ import { add } from "./mathModule";
 
 const result = add(5, 3);
 console.log(`The sum is: ${result}`); // The sum is: 8
+```
+**Task 2:** Create a module that exports an object representing a person with properties and methods. Import and use this module in another script.
+
+```JS
+// -------------- personModule.js
+
+// Exporting an object representing a person with properties and methods
+export const person = {
+  name: 'siraj',
+  age: 25,
+  greet() {
+    return `Hello, my name is ${this.name}`;
+  }
+};
+```
+
+```JS
+// -------------- app.js
+
+// Importing the person object from personModule.js
+import { person } from './personModule';
+
+console.log(person.greet()); // Hello, my name is manoj
+console.log(`Age: ${person.age}`); // Age: 25
 ```
